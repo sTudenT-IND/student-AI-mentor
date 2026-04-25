@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen to Notes</title>
+    <link rel="stylesheet" href="tts_style.css">
+</head>
+<body>
+
+    <section class="tts-wrapper">
+
+        <div class="tts-card">
+            <h2>🔊 Listen to Your Notes</h2>
+
+            <!-- Toggle Buttons -->
+            <div class="toggle-buttons">
+                <button onclick="showPDF()">📄 PDF</button>
+                <button onclick="showText()">✍️ Text</button>
+            </div>
+
+            <!-- PDF Input -->
+            <div id="pdfBox" class="input-box hidden">
+                <input type="file" id="pdfFile" accept=".pdf">
+                <button class="main-btn" onclick="uploadPDF()">Convert</button>
+            </div>
+
+            <!-- Text Input (default visible) -->
+            <div id="textBox" class="input-box">
+                <textarea id="noteText" placeholder="Type your notes here..."></textarea>
+                <button class="main-btn" onclick="speakText()">Convert</button>
+            </div>
+
+            <!-- Audio Player -->
+            <audio id="audioPlayer" controls></audio>
+        </div>
+
+    </section>
+
+    <script src="tts_script.js"></script>
+
+</body>
+</html>
