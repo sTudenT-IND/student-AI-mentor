@@ -1,0 +1,7 @@
+streamlit
+ChatTTS
+soundfile
+torch
+transformers
+numpy
+scipy
