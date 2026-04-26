@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viva Practice Tool</title>
+    <link rel="stylesheet" href="viva.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎤 Viva Practice Assistant</h1>
+        <p>Prepare for interviews and oral exams interactively</p>
+
+        <button onclick="startViva()">Start Viva</button>
+
+        <div id="viva-box" style="display:none;">
+            <h2 id="question"></h2>
+
+            <input type="text" id="answer" placeholder="Type your answer here">
+
+            <button onclick="submitAnswer()">Submit</button>
+
+            <p id="feedback"></p>
+        </div>
+
+        <h2 id="score"></h2>
+    </div>
+
+    <script src="viva.js"></script>
+</body>
+</html>
